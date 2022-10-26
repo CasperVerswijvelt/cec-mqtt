@@ -2,14 +2,12 @@
   "cecClientCommand": "cec-client",
   "cecClientArgs": ["-d", "1"],
   "mqttUrl": "mqtt://192.168.69.11:1883",
-  "powerCheckIntMs": 1000,
+  "powerCheckInterval": 1000,
   "powerCmdWaitMs": 5000,
-
-  "idMap": {
+  "topicMap": {
     "0": {
-      "rootTopic": "ha/living_room/tv"
+      "stateTopic": "ha/living_room/tv/state",
+      "commandTopic": "ha/living_room/tv/set"
     }
-  },
-
-  "subTopics": ["power"]
+  }
 }
