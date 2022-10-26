@@ -1,12 +1,12 @@
 {
   "cecClientCommand": "cec-client",
   "cecClientArgs": ["-d", "1"],
-  "mqttUrl": "mqtt://MQTT-HOST-HERE",
+  "mqttUrl": "mqtt://192.168.69.11:1883",
   "powerCheckIntMs": 1000,
   "powerCmdWaitMs": 5000,
 
   "idMap": {
-    "0": { 
+    "0": {
       "rootTopic": "ha/living_room/tv"
     }
   },
